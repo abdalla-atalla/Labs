@@ -1,0 +1,8 @@
+public void display(queue){
+	while(!queue.empty()){
+		System.out.println(queue.poll());
+	}
+}//clears queue
+#2. 
+a. s-1 & q.size()= 1
+b. s++ & q.isempty()

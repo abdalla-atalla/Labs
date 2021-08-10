@@ -1,0 +1,1 @@
+Insertion Sort because it will compare each element and insert it into the proper position and the number of swaps is less than bubble swap due to using item selection thus making insertion sort faster and more efficient.

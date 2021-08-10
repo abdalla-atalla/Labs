@@ -1,0 +1,43 @@
+1.
+Creates a HashSet object to hold Strings and references to the variables 
+Adds the string "hello"
+Adds the string "bye"
+Copies the content of s into itself
+Create a TreeSet object to hold Strings and assigned a reference it to the variable t.
+Adds the string "123" to t.
+Adds the contents of t to s. 
+Outputs 'true' since all of the elements in t are included in s
+Outputs "false" since there are elements in s that are not in t
+Outputs "false" since "ace" is not in s
+Outputs "true" since "123" is contained in s
+Removes the elements from s that are not in t
+Outputs "true" since "123" is still in s
+Effectively nothing, since s now only contains the values in t
+Outputs "true" since "123" is still in t
+
+B)
+ import java.util.*;
+public class Main
+{
+        public static void main(String[] args) {
+            Set<String> a=new HashSet<String>();
+            Set<String> b=new HashSet<String>();        //Declaring the sets with 'a' and 'b'
+            a.add("Computer"); //Adding the String elements in set 'a'.....
+            a.add("FedEx");  //Adding the String elements in set 'a'......
+            
+            b.add("Kindness"); //Adding the string elements in  set 'b'.........
+            b.add("Computer");
+          
+           Set<String> c=new HashSet<String>(a);    //Declaring and initializing the set 'c' with 'a' elements....
+           c.addAll(b);
+            System.out.println("Union : "+c);   //Union of Two sets (c=(a-b))
+            c.clear();  //Clearing the set (it has previous data)....
+            c.addAll(a);    //Adding set 'a' elements....
+            c.retainAll(b); //performing Intersection on sets 'a' and 'b'......
+            System.out.println("Intersection : "+c);
+            c.clear();
+            c.addAll(a);
+            c.removeAll(b); //Removing the set 'b' elements from a and storing in set 'c'.....
+            System.out.println("Difference : "+c);
+        }
+}

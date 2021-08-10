@@ -1,0 +1,34 @@
+public boolean empty(){
+	if (isEmpty() == true){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+public ArrayList<E> peek(){
+	return ArrayList<E>().get(0);
+}
+
+
+public ArrayList<E> pop(){
+	return ArrayList<E>().get(0);
+	ArrayList<E>().remove(0);
+}
+
+public ArrayList<E> push(E obj){
+	ArrayList<E>().add(obj);
+	return obj;
+}
+1.
+Jane
+Philip
+Dustin
+Robin
+Debbie
+Rich
+Top = Joseph
+nextTop = Jane
+
+2. Returns each name & clears stack 
+3. Returns each name & doesnt clear stack
